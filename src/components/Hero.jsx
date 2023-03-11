@@ -76,11 +76,11 @@ const Hero = () => {
             onLoad={handleImageLoad}
           />
           <div className="w-full text-white font-montserrat ml-[-50px] ipon5:ml-2 realme:ml-[-30px]">
-            <h1 className="typing text-sm ipon5:text-[12px] realme:text-[10px]">{text}</h1>
+            <h1 className="typing text-sm ipon5:text-[12px] realme:text-[10px] ipad:text-lg">{text}</h1>
             <h4 data-text="Rafael Alferdyas Putra Alfansyah" className="text-lg font-bold ipon5:text-sm realme:text-sm ipad:text-2xl lg:text-3xl 2xl:text-4xl">
               Rafael Alferdyas Putra Alfansyah
             </h4>
-            <h3 className="text-sm ipon5:text-[8px] realme:text-[8px] ipad:text-sm">Currently Working as IT Specialist BCA</h3>
+            <h3 className="text-sm ipon5:text-[8px] realme:text-[8px] ipad:text-lg">Currently Working as IT Specialist BCA</h3>
           </div>
         </div>
 
