@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import foto1 from "../assets/foto1.png";
 import foto2 from "../assets/foto2.png";
+import skeletonfoto from "../assets/skeletonfoto.svg"
 import Loading from "./Loading";
 
 const Hero = () => {
@@ -66,7 +67,7 @@ const Hero = () => {
     <>
       <Loading />
       <div className="flex w-full h-full justify-center">
-        <div className="max-w-[1920px] h-full items-center flex justify-between z-10">
+        <div className="max-w-[1920px] h-full items-center flex justify-between z-10 overflow-hidden">
           <img
             className={`w-full ml-[-60px] object-cover h-[50vh] ipon5:h-[50vh] realme:h-[50vh] iponxr:h-[50vh] ipad:h-screen lg:ml-[-120px] ${
               showImage ? "opacity-100" : "opacity-0"
@@ -77,8 +78,11 @@ const Hero = () => {
           />
           <div className="w-full text-white font-montserrat ml-[-50px] ipon5:ml-2 realme:ml-[-30px]">
             <h1 className="typing text-sm ipon5:text-[12px] realme:text-[10px] ipad:text-lg">{text}</h1>
-            <h4 data-text="Rafael Alferdyas Putra Alfansyah" className="text-lg font-bold ipon5:text-sm realme:text-sm ipad:text-2xl lg:text-3xl 2xl:text-4xl">
+            <h4 data-text="Rafael Alferdyas Putra Alfansyah" className="text-lg font-bold ipon5:hidden ipad:block ipad:text-2xl lg:text-3xl 2xl:text-4xl">
               Rafael Alferdyas Putra Alfansyah
+            </h4>
+            <h4 data-text="Rafael Alferdyas Putra" className="text-lg font-bold ipon5:text-sm realme:text-sm ipad:hidden">
+              Rafael Alferdyas Putra
             </h4>
             <h3 className="text-sm ipon5:text-[8px] realme:text-[8px] ipad:text-lg">Currently Working as IT Specialist BCA</h3>
           </div>
